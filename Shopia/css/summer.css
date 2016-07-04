@@ -1,0 +1,91 @@
+.summer{
+	text-align: center;
+	padding: 100px 10px 0;
+}
+
+.summer-pic{
+	width: 300px;
+	height: 345px;
+	position: relative;
+}
+
+.summer-pic:hover{
+	opacity: 0.8;
+}
+
+.summer-pic:hover .trapezium{
+	 border-bottom: 40px solid rgba(254,171,18,1);
+}
+
+.summer-pic img{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+
+.summer p{
+	color: #fff;
+	line-height: 40px;
+}
+
+.trapezium {
+    height: 0;
+    width: 120px;
+    border-bottom: 40px solid #000;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+}
+
+.summer-pic{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+@media screen and (min-width: 640px){
+	.summer-collection{
+		width: 640px;
+		margin: 0 auto;
+	}
+
+	.summer-pic{
+		float: left;
+		margin-right: 20px;
+	}
+
+	.summer-pic:nth-child(2n){
+		margin-right: 0;
+	}	
+}
+
+@media screen and (min-width: 1024px){
+	.summer-collection{
+		width: 1024px;
+		margin: 0 auto;
+	}
+
+	.summer-pic{
+		width: 23%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+}
+
+@media screen and (min-width: 1284px){
+	.summer-collection{
+		width: auto;
+	}
+
+	.summer-pic{
+		width: 300px;
+		margin-right: 7px;
+	}
+
+	.summer-pic:nth-child(4), .summer-pic:nth-child(8){
+		margin-right: 0;
+	}	
+}	

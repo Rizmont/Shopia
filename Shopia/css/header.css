@@ -1,0 +1,183 @@
+header{
+	overflow: hidden;
+	text-align: left;
+	background: #fff;
+    padding: 0 10px;
+}
+
+header a{
+    color: #000;
+}
+
+
+.nav-first{
+    font-family: 'Playball', cursive;
+    margin-top: 17px;
+    display: none;
+}
+
+.nav-first ul li{
+    display: inline-block;
+     margin-right: 23px;
+     font-size: 14px;
+     text-transform: uppercase;
+}
+
+.nav-first ul li:last-child{
+    margin-right: 0;
+}
+
+.nav-second{
+    text-align: center;
+}
+
+.nav-second ul li{
+    display: inline-block;
+     margin-right: 10px;
+     padding: 4px 6px;
+     border-radius: 50%;
+     border: 2px solid #A6894F;
+     font-size: 21px;
+}
+
+.nav-second ul li a{
+     color: #A6894F;
+}
+
+.f{
+    padding: 2px 4.5px;
+}
+
+select{
+    background: #000;
+    color: #fff;
+    outline: none;
+    height: 34px;
+    width: 85px;
+    padding-left: 7px;
+    display: none;
+}
+
+.desk{
+    display:none;
+}
+
+
+.menu-icon{
+    float: right;
+    margin-top: 34px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+header .mobile-menu{
+    position: absolute;
+    z-index: 9999;
+    background: #000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+header .mobile-menu.active{
+    display: block;
+}
+
+.menu-exit{
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+header .mobile-menu ul{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+header .mobile-menu ul li a{
+    font-size: 21px;
+    line-height: 42px;
+    color: #fff;
+}
+
+@media screen and (min-width: 640px){
+    header{
+        text-align: center;
+    }
+
+    .nav-first{
+        float: left;
+        margin-bottom: 11px;
+        margin-right: 15px;
+        display: inline;
+    }
+
+    .nav-second{
+        float: right;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .mob-lap{
+        display: none;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+    .desk{
+        display: inline-block;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nav-first{
+        position: absolute;
+        left: 0;
+        top: 17px;
+        font-family: 'Playball', cursive;
+
+    }
+
+    .nav-second{
+       position: absolute;
+        right: 0;
+        top: 14px;
+    }
+
+    .nav-second ul{
+        float: left;
+        margin-right: 43px;
+    }
+
+    select{
+        background: #000;
+        color: #fff;
+        outline: none;
+        height: 34px;
+        width: 85px;
+        padding-left: 7px;
+    }
+
+    .mob-lap, select{
+        display: inline-block;
+    }
+
+    .desk{
+        display: none;
+    }
+}

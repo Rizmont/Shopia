@@ -1,0 +1,11 @@
+.brand{
+	padding: 100px 10px 0;
+	text-align: center;
+}
+
+.brand .brands div{
+	display: inline-block;
+	text-align: center;
+	margin: 10px 30px;
+	vertical-align: middle;
+}

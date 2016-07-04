@@ -1,0 +1,140 @@
+.collection{
+	text-align: center;
+	margin: 0 auto;
+	padding: 100px 10px 0;
+}
+
+.picture{
+	width: 300px;
+	height: 400px;
+	position: relative;
+	margin: 23px auto 0;
+}
+
+.picture2 .picture{
+	height: 816px;
+	width: 300px;
+	position: relative;
+	margin: 23px auto 0;
+}
+
+.box{
+	overflow: hidden;
+}
+
+
+.box .content{
+	box-sizing: border-box;
+	border: 2px solid #fff;;
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 80% 0 0 0;
+	transform: translate(-50%, -50%);
+}
+
+.box .picture2 .content{
+	height: 90%;
+	padding: 345px 0 0 0;
+}
+
+
+.box .content:hover{
+	background: rgba(0,0,0,0.5);
+}
+
+.but{
+	display: none;
+}
+
+.box .content:hover .but{
+	display: block;
+}
+
+@media screen and (min-width: 640px){
+	.box{
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	.picture1{
+		overflow: hidden;
+	}
+
+	.picture1 .picture{
+		float: left;
+	}
+	.picture1 .picture:last-child{
+		float: right;
+	}
+
+	.picture2{
+		float: right;
+	}
+
+	.picture3{
+		float: left;
+	}
+
+	.picture3 .picture:last-child{
+		margin-top: 17px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.box{
+		min-width: 930px;
+		margin: 0 auto;
+	}
+
+	.picture1{
+		float: left;
+		margin-right: 15px;
+	}
+	
+	
+	.picture1 .picture{
+		float: none;
+	}
+	.picture1 .picture:last-child{
+		float: none;
+	}
+
+	.picture3 .picture:last-child, .picture1 .picture:last-child{
+		margin-top: 17px;
+	}
+
+}	
+
+@media screen and (min-width: 1284px){
+	.collection{
+		padding: 0;
+	}
+
+	.box{
+		max-width: 100%;
+	}
+
+	.picture{
+		width: 400px;
+	}
+	
+	.box .content{
+		padding-top: 60%;
+	}
+
+	.picture2 .picture{
+		width: 460px;
+	}
+
+	.picture2{
+		float: left;
+	}
+	
+	.picture1, .picture2{
+		margin-right: 12px;
+	}
+}	
+

@@ -1,0 +1,144 @@
+.support{
+	text-align: center;
+}
+
+.support .row{
+	overflow: hidden;
+}
+
+.support h4{
+	font-size: 23px;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
+
+.block{
+	background: rgba(83, 39, 0, 0.7);
+	padding: 30px 0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 25px;z
+}
+
+.black{
+	background: rgba(0, 0, 0, 1);
+}
+
+.pic{
+	width: 43px;
+	margin-bottom: 10px;
+	margin: 0 auto;
+}
+
+.pic img{
+	width: 100%;
+}
+
+.text{
+	display: inline-block;
+}
+
+.laptop{
+	display: none;
+}
+
+@media screen and (min-width: 1024px){
+	.mob-desk{
+		display: none;
+	}
+
+	.laptop{
+		display: block;
+	}
+
+	.block{
+		padding: 31px 0 21px 35px;
+		float: left;
+		width: 33.333%;
+		box-sizing: border-box;
+	}
+
+	.black{
+		position: relative
+	}
+
+	.support{
+		text-align: left;
+	}
+
+	.pic{
+		float: left;
+		margin: 0 15px 0 0;
+	}
+
+	.first, .last. .black{
+		position: relative;
+	}
+
+	.black:before{
+		content: "";
+    width: 130px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    top: -9px;
+    left: -78px;
+    -webkit-transform: rotate(243deg);
+    -ms-transform: rotate(243deg);
+    transform: rotate(243deg);
+    z-index: 1;
+	}
+	
+	.black:after{
+		content: "";
+	    width: 130px;
+	    height: 25px;
+	    background: #fff;
+	    position: absolute;
+	    bottom: -9px;
+	    left: -78px;
+	    -webkit-transform: rotate(-243deg);
+	    -ms-transform: rotate(-243deg);
+	    transform: rotate(-243deg);
+	    z-index: 1;
+	}
+
+	.last:before{
+		content: "";
+	    width: 130px;
+	    height: 25px;
+	    background: #fff;
+	    position: absolute;
+	    top: -9px;
+	    left: -52px;
+	    -webkit-transform: rotate(-243deg);
+	    -ms-transform: rotate(-243deg);
+	    transform: rotate(-243deg);
+	    z-index: 1;
+	}
+	
+	.last:after{
+		content: "";
+	    width: 130px;
+	    height: 25px;
+	    background: #fff;
+	    position: absolute;
+	    bottom: -9px;
+	    left: -52px;
+	    -webkit-transform: rotate(243deg);
+	    -ms-transform: rotate(243deg);
+	    transform: rotate(243deg);
+	    z-index: 1;
+	}
+}
+
+
+
+
+@media screen and (min-width: 1284px){
+    .support h4{
+		font-size: 32px;
+	}
+
+}
+	

@@ -1,0 +1,89 @@
+.customers-top{
+	text-align: center;
+	padding-top: 110px;
+}
+
+
+.customers{
+	padding: 0 10px;
+	text-align: center;
+	background: rgba(83, 39, 0, 0.7);
+}
+
+.customers-people{
+	position: relative;
+	padding-top: 70px;
+	overflow: hidden;
+}
+
+.customers-people p{
+	color: #fff;
+	font-size: 21px;
+	line-height: 32px;
+}
+
+.customers-people h3{
+	color: #000;
+	font-family: 'arizoniaregular';
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 60px;
+}
+
+.customers-people span{
+	color: #eee;
+	font-size: 21px;
+	line-height: 32px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+.customers-people:before{
+	position: absolute;
+    content: "";
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    border-color: #fff rgba(0, 2, 0, 0) rgba(0, 2, 0, 0) rgba(0, 2, 0, 0);
+    border-style: solid;
+    border-width: 60px 150px 0 150px;
+    transform: translate(-50%, 0);
+    height: 0;
+    width: 0;
+}
+
+.customer1, .customer2{
+	padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px){
+	.customer1{
+		float: left;
+		text-align: left;
+		width: 50%;
+	}
+
+	.customer1 img{
+		float: left;
+		margin-right: 10px;
+	}
+
+	.customer1 .about-customer{
+		margin-top: 74px;
+	}
+
+	.customer2{
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+
+	.customer2 img{
+		float: right;
+		margin-left: 10px;
+	}
+
+	.customer2 .about-customer{
+		margin-top: 74px;
+	}
+}
